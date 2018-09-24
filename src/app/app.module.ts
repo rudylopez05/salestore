@@ -15,7 +15,8 @@ import { LiniasPadreComponent } from './administracion/linias-padre/linias-padre
 import { CargarProductosComponent } from './administracion/cargar-productos/cargar-productos.component';
 import { AuthComponent } from './auth/auth.component';
 import { SigninComponent } from './auth/signin/signin.component';
-import { SigupComponent } from './auth/sigup/sigup.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,13 @@ import { SigupComponent } from './auth/sigup/sigup.component';
     CargarProductosComponent,
     AuthComponent,
     SigninComponent,
-    SigupComponent
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
