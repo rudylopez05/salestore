@@ -1,0 +1,13 @@
+
+@import '~@angular/material/theming';
+    @include mat-core();
+        $tema-primary: mat-palette($mat-amber, 500);
+        $tema-accent:  mat-palette($mat-gray, 500);
+        $tema-warn:    mat-palette($mat-red);
+        $tema: mat-light-theme($tema-primary, $tema-accent, $tema-warn);
+
+@include angular-material-theme($tema);
+
+.navtabs-container{
+    background-color: mat-color($tema-primary);
+}
