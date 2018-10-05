@@ -1,0 +1,16 @@
+.web-button{
+
+width: 170px;
+color: white;
+border: 1px solid white;
+text-transform: uppercase;
+
+}
+
+.web-container{
+    padding: 25px 115px;
+}
+.container{
+    height: 100vh;
+    background: url(/assets/imagenes/home.jpg) no-repeat;
+}

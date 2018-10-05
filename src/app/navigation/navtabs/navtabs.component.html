@@ -1,16 +1,35 @@
 <div class="navtabs-container">
-    <nav mat-tab-nav-bar>
-        <span class="toolbar-flex"></span>
-        <mat-tab-group>
-          <mat-tab label="Home"></mat-tab>
-          <mat-tab label="Productos"></mat-tab>
-          <mat-tab label="Proyectos"></mat-tab>
-          <mat-tab label="Contact us"></mat-tab>
-          <mat-tab label="Contact us"></mat-tab>
-        </mat-tab-group>
-        
-        <span class="toolbar-flex"></span>
-      </nav>
+    
+  <nav mat-tab-nav-bar mat-tab-nav-bar  fxFlex fxLayout fxLayoutAlign="center center">       
+      <a mat-tab-link
+      routerLink="/home"
+      routerLinkActive #home="routerLinkActive"
+      [active]="home.isActive">Home
+   </a>
+
+   <a mat-tab-link
+      routerLink="/productos"
+      routerLinkActive #productos="routerLinkActive"
+      [active]="productos.isActive">Productos
+   </a>
+
+   <a mat-tab-link
+   routerLink="/proyectos"
+   routerLinkActive #proyectos="routerLinkActive"
+   [active]="proyectos.isActive">Proyectos
+</a>
+
+
+<a mat-tab-link
+routerLink="/administracion"
+routerLinkActive #administracion="routerLinkActive"
+[active]="administracion.isActive">Marcas
+</a>
+
+<a mat-tab-link
+routerLink="/productos"
+routerLinkActive #productos="routerLinkActive"
+[active]="productos.isActive">Contacto
+</a>
+   </nav>
 </div>
-
-
